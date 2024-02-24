@@ -112,34 +112,41 @@ An inline comment is a comment on the same line as a statement. Inline comments 
 
 
 # Raise to the 3rd power **
-num_three = 6
-num_three **= 3
-print(num_three)
+# num_three = 6
+# num_three **= 3
+# print(num_three)
 
 
 
 # Raise to the 2nd power **
-data = 16
-data **= 2
-print(data)
+# data = 16
+# data **= 2
+# print(data)
 
 
 # Integer divide by 3 //
-val_one = 16
-
+# val_one = 16
+# val_one //= 3
+# print(val_one)
 
 
 # Integer divide by 4 //
-val_two = 9
+# val_two = 9
+# val_two //= 4
+# print(val_two)
 
 
 # Find the remainder if divided by 3 %
-val_three = 10
+# val_three = 10
+# val_three %= 3
+# print(val_three)
 
 
 
 # Find the remainder if divided by 5 %
-val_four = 14
+# val_four = 14
+# val_four %= 5
+# print(val_four)
 
 
 # Refactor the fahrenheit/celsius converter using shortcut operators
@@ -148,17 +155,31 @@ val_four = 14
 # celsius = (fahrenheight - 32) * 5/9
 # print(celsius)
 
+# fahrenheight = 89
+# fahrenheight -= 32
+# fahrenheight *= 5/9
+# celsius = fahrenheight
+# print(celsius)
+
 
 ''' Boolean Operators'''
 
 # Is 7 less than 5? <
-
+#print(7 < 5)
+# result = (7 < 5)
+# print(result)
 
 # Is 4 less than or equal to 4? <=
+# print(4 <= 4)
 
+# result = (4 <= 4)
+# print(result)
 
 # Is 6 greater than 2? >
+print(6 > 2)
 
+result = (6 > 2)
+print(result)
 
 # Is 5 greater than or equal to 6? >=
 
