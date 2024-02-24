@@ -229,13 +229,16 @@ An inline comment is a comment on the same line as a statement. Inline comments 
 # newname = fname
 # print(fname is newname)
 
-test_name = 'Taylor'
-print(test_name is fname)
-
 
 # in
-
+print('J' in 'January')
+print ('F' in 'March')
 
 # eval
 
+is_open = 'True'
+weekday = 'False'
 
+
+print(eval(is_open))
+print(eval(weekday))
