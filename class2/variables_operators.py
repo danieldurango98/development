@@ -164,16 +164,16 @@ a brief python script that will determine the perimeter of the triangle. Comment
 
 # Variables
 
-side_one = 4
-base = 6
-side_two = 7
+# side_one = 4
+# base = 6
+# side_two = 7
 
 # Formula
-perimeter = side_one + base + side_two
-print(perimeter)
-print('Using boolean operators is side #1 greater than the base?',side_one > base)
-print('Using boolean operators is side #2 less than the base?',side_two < base)
-print('Using boolean operators is base larger than or equal to side #1?',base >= side_one)
+# perimeter = side_one + base + side_two
+# print(perimeter)
+# print('Using boolean operators is side #1 greater than the base?',side_one > base)
+# print('Using boolean operators is side #2 less than the base?',side_two < base)
+# print('Using boolean operators is base larger than or equal to side #1?',base >= side_one)
 
 
 
