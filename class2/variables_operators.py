@@ -87,18 +87,27 @@
 # print(type(num_two))
 
 # String
-first_name = 'Daniel'
-last_name = 'Durango'
-fullname = first_name + ' ' + last_name
-print(fullname)
-print(first_name, last_name)
+# first_name = 'Daniel'
+# last_name = 'Durango'
+# fullname = first_name + ' ' + last_name
+# print(fullname)
+# print(first_name, last_name)
 
 # List 
+# student_grades = [100 , 95, 70, 85, 40]
+# print(student_grades)
+# print(type(student_grades))
 
+# For loop
+# for s in student_grades:
+#     print(s)
 
 # Dictionary
-
-
+demographic_info = {"First Name": "Daniel",
+                    "Last Name": "Durango",
+                    "State": "New York"}
+print(demographic_info)
+print(type(demographic_info))
 # Cast a string to an integer
 
 
