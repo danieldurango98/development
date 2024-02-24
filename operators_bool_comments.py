@@ -176,35 +176,62 @@ An inline comment is a comment on the same line as a statement. Inline comments 
 # print(result)
 
 # Is 6 greater than 2? >
-print(6 > 2)
+# print(6 > 2)
 
-result = (6 > 2)
-print(result)
+# result = (6 > 2)
+# print(result)
 
 # Is 5 greater than or equal to 6? >=
+# print(5 >= 6)
 
+# result = (5 >= 6)
+# print(result)
 
 # Is 5 equal to 5? ==
+# print(5 == 5)
 
+# result = (5 == 5)
+# print(result)
 
 # Is 100 not equal to 75? !=
 
+# print(100 != 75)
+
+# result = (100 != 75)
+# print(result)
 
 # and
 
+# print(5 == 5 and 4 == 4) # this is true because both are true
+# print(2 == 2 and 3 == 2) # this is false because both is false
+# print( 1 == 0 and 3 == 5) # this is false because both are false
 
 # Values from example 1 can be stored in variables
+# log_1 = (5 == 5)
+# log_2 = (4 == 4)
+# print(log_1 and log_2)
 
 
 # or
+# print(5 == 5 or 5 == 3) # True if at least 1 are True
 
 
 # not
+# x = 5
+# y = 7
 
-# Is x less than y?
-
+# Is x less than y? <
+# print(x < y)
+# print(not x < y)
 
 # Are we the same object? is 
+# fname = 'Taylor'
+# newname = fname
+# print(fname is newname)
+
+test_name = 'Taylor'
+print(test_name is fname)
+
 
 # in
 
