@@ -129,28 +129,25 @@
 # num_colors = len(fav_colors)
 # print(num_colors)
 
-color = 'orange'
+# color = 'orange'
+
 # my_count = len(color)
 # print(my_count)
 # print(type(my_count))
 
-for c in color:
-    print(c)
-
-# finding amount of assignments
-
-
-# Perimeter of a rectangle
-
-
-# Determine perimeter and display output
+# for c in color:
+#     print(c)
 
 
 # Fahrenheit to Celsius
+# fahrenheit = 89
+# celsius = (fahrenheit - 32) * 5/9
+# print(celsius)
 
 
-# Eval
-
+# # Eval
+# cold_weather = 'True'
+# print(eval(cold_weather))
 
 '''
 # You are given a triangle with a side #1 of 4, base of 6, and side #2 of 3. Create
@@ -162,11 +159,21 @@ a brief python script that will determine the perimeter of the triangle. Comment
 4. Using boolean operators is base larger than or equal to side #1?
 '''
 
+# Perimeter of a Triangle
+# perimeter = side_one + base + side_two
 
+# Variables
 
+side_one = 4
+base = 6
+side_two = 7
 
-
-
+# Formula
+perimeter = side_one + base + side_two
+print(perimeter)
+print('Using boolean operators is side #1 greater than the base?',side_one > base)
+print('Using boolean operators is side #2 less than the base?',side_two < base)
+print('Using boolean operators is base larger than or equal to side #1?',base >= side_one)
 
 
 
