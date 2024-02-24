@@ -88,30 +88,40 @@ An inline comment is a comment on the same line as a statement. Inline comments 
 # print(num_two)
 
 # Multiply by 3 *
-my_value = 9
-my_value *= 3
-print(my_value)
+# my_value = 9
+# my_value *= 3
+# print(my_value)
 
 
 # Multiply by 10 *
-mileage = 15
+# mileage = 15
+# mileage *= 10
+# print(mileage)
 
 
 # Divide by 2 /
-pizza_slices = 8
+# pizza_slices = 8
+# pizza_slices /= 2
+# print(pizza_slices)
 
 
 # Divide by 7 /
-fees = 8.90
+# fees = 8.90
+# fees /= 7
+# print(fees)
 
 
 # Raise to the 3rd power **
 num_three = 6
+num_three **= 3
+print(num_three)
 
 
 
 # Raise to the 2nd power **
 data = 16
+data **= 2
+print(data)
 
 
 # Integer divide by 3 //
