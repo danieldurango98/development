@@ -24,6 +24,6 @@ print(type(perimeter)) # finding the class type
 
 print('The perimeter of your triangle is',perimeter)  # Output statement
 
-print(side_one > side_two)
-print(base == side_one)
+print(side_one > side_two)  # figuring out if side 1 is greater than side 2
+print(base == side_one) # figuring out if the base is equal to side 1
 

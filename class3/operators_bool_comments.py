@@ -231,14 +231,14 @@ An inline comment is a comment on the same line as a statement. Inline comments 
 
 
 # in
-print('J' in 'January')
-print ('F' in 'March')
+# print('J' in 'January')
+# print ('F' in 'March')
 
-# eval
+# # eval
 
-is_open = 'True'
-weekday = 'False'
+# is_open = 'True'
+# weekday = 'False'
 
 
-print(eval(is_open))
-print(eval(weekday))
+# print(eval(is_open))
+# print(eval(weekday))
