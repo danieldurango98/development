@@ -140,26 +140,33 @@ ex_8 = '123*' # Am I alphanumeric?
 test_3 = 'abcde'
 test_4 = '012345'
 
-print(test_3.isalpha())
-print(test_4.isalpha())
+# print(test_3.isalpha())
+# print(test_4.isalpha())
 
 ex_9 = 'LMN0P' # Are we all in the alphabet
+# print(ex_9.isalpha())
 
 # isdecimal() Are all characters decimals?
 
 test_5 = '1234P'
 test_6 = '234567'
 
+# print(test_5.isdecimal())
+# print(test_6.isdecimal())
 
 ex_11 = '123456' # Check for decimals?
+# print(ex_11.isdecimal())
 
 # isdigit() Are all characters digits?
 
 test_7 = 'H1234'
 test_8 = '9876'
 
+# print(test_7.isdigit())
+# print(test_8.isdigit())
 
 ex_10 = '123Hello' # Check for digits!
+# print(ex_10.isdigit())
 
 ''' Fun fact isdecimal() method supports only Decimal Numbers. isdigit() method supports Decimals, Subscripts, Superscripts. 
 isnumeric will check for unicode characters
@@ -170,6 +177,8 @@ isnumeric will check for unicode characters
 
 test_9 = 'Zebra'
 test_10 = 'affordable'
+# print(test_9.islower())
+# print(test_10.islower())
 
 
 ex_12 = 'Username' # check if all lowercase
@@ -178,7 +187,8 @@ ex_12 = 'Username' # check if all lowercase
 
 test_11 = 'Marshall'
 test_12 = 'HALLOWEEN'
-
+# print(test_11.isupper())
+# print(test_12.isupper())
 
 ex_13 = 'TEMPLE' # check if uppercase
 
@@ -186,7 +196,8 @@ ex_13 = 'TEMPLE' # check if uppercase
 
 test_13 = '    '
 test_14 = 'j      b    c'
-
+# print(test_13.isspace())
+# print(test_14.isspace())
 
 ex_14 = '   ' # check if whitespace
 
@@ -196,19 +207,23 @@ ex_14 = '   ' # check if whitespace
 test_15 = 'Eye of the tiger'
 test_16 = 'Eye Of The Tiger'
 
+# print(test_15.istitle())
+# print(test_16.istitle())
 
 ex_15 = 'Tempus Fugit' # check for title casing
 
 # join() Joins the elements of an iterable to the end of the string
 
-my_colors = ['blue', 'green', 'red', 'orange', 'blue']
-
+my_colors = ['blue', 'green', 'red', 'orange', 'blue'] # list datatype
+new_string = '-'.join(my_colors)
+# print(new_string)
 
 ex_16 = ['summer', 'spring', 'fall', 'winter'] # create a string from this list and separate it with an asterisk
 
 # lower() Converts a string into lower case
 day = 'MONDAY'
-
+new_day = day.lower()
+print(new_day)
 
 # partition() Returns a tuple where the string is partitioned into three parts
 test_17 = 'I am excited about spring time.'
@@ -238,10 +253,16 @@ name = 'giraffe'
 
 ex_20 = 'summer' # Check if this string starts with an 's'
 
-# strip() Returns a trimmed version of the string
+# strip() Returns a trimmed version of the string  cleans data
 username = '   jessica123    '
+username_cleaned = username.strip()
+# print(len(username))
+# print(len(username_cleaned))
 
 ex_21 = '  sportsfan876  ' # sanitize this string
+
+user_input = input('What is your name? ')
+print(user_input)
 
 '''
 Write some code that will take a string from the user and print if it is a number or not.
