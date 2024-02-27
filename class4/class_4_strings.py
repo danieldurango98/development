@@ -223,7 +223,7 @@ ex_16 = ['summer', 'spring', 'fall', 'winter'] # create a string from this list 
 # lower() Converts a string into lower case
 day = 'MONDAY'
 new_day = day.lower()
-print(new_day)
+# print(new_day)
 
 # partition() Returns a tuple where the string is partitioned into three parts
 test_17 = 'I am excited about spring time.'
@@ -261,13 +261,16 @@ username_cleaned = username.strip()
 
 ex_21 = '  sportsfan876  ' # sanitize this string
 
-user_input = input('What is your name? ')
-print(user_input)
+#user_input = int(input('What is your favorite number? ')) 
+
+# print(int(user_input)) # casting the string to an integer
+# print(type(user_input))
 
 '''
 Write some code that will take a string from the user and print if it is a number or not.
 
-Examples:
+Examples:   #ex_10 = '123Hello' # Check for digits!
+print(ex_10.isdigit())
 apple
 False
 
@@ -275,12 +278,16 @@ False
 True
 '''
 
-# Get input from user
+# Get input from user # input statement
 
-# Test input
+user_input = input('Good afternoon, please enter your input: ')
+
+# Test input 
+result = user_input.isdigit()
+print(result)
 
 # Provide output
-
+print('Is your input a number or not?', result)
 
 
 '''
