@@ -280,15 +280,15 @@ True
 
 # Get input from user # input statement
 
-user_input = input('Good afternoon, please enter your input: ')
+# user_input = input('Good afternoon, please enter your input: ')
 
 # Test input 
-result = user_input.isdigit()
-print(result)
+# result = user_input.isdigit()
+# print(result)
 
 # Provide output
-print('Is your input a number or not?', result)
-
+# print('Is your input a number or not?', result)
+# print(f'Is {user_input} a number or not? ', result)
 
 '''
 Take a word from the user. Then take a number from the user. Then print whether the word is longer than the number.
@@ -304,13 +304,23 @@ True
 '''
 
 # Get user input
+user_word_input = input('Please enter your word? ')
+user_number_input = int(input('Please enter your number? ' ))
+
+print(user_word_input)
+print(user_number_input)
 
 # Convert where needed
+length_of_word = len(user_word_input) # length of our word input
+print(length_of_word)
+print(type(user_number_input))
 
 # Comparison
+result = (length_of_word > user_number_input)
+
 
 # Output
-
+print(f'Is {user_word_input} longer than {user_number_input}?', result)
 
 '''
 Exercise 
