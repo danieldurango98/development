@@ -55,46 +55,61 @@ letter_x = first_name[3]
 '''Reverse indexing'''
 fav_animal = 'Ostrich'
 
-print(fav_animal[-1])
-print(fav_animal[-2])
-print(fav_animal[-3])
-print(fav_animal[-4])
-print(fav_animal[-5])
-print(fav_animal[-6])
-print(fav_animal[-7])
+# print(fav_animal[-1])
+# print(fav_animal[-2])
+# print(fav_animal[-3])
+# print(fav_animal[-4])
+# print(fav_animal[-5])
+# print(fav_animal[-6])
+# print(fav_animal[-7])
 # print(fav_animal[-8]) # Lets note the error
 
 # Using bracket notation and reverse indexing, access the letter g, the letter i, the letter p
 fav_season = 'spring'
 
-
+# print(fav_season[-1])
+# print(fav_season[-3])
+# print(fav_season[-5])
 
 ''' Slicing '''
 # There are 3 parameters available with indexing with bracket notation [start:stop:step]
 fav_food = 'spaghetti'
-
+slice_of_fav_food = fav_food[2:7] # exclude the character a stop
+# print(slice_of_fav_food)
 
 # Using slicing please create a string that accesses 'rica' in 'America'
 
-country = 'America'
+country = 'America'  # 
 
+usa = country[3:7]
+# print(usa)
 
 # Using slicing please create a string that accesses 'ora' in 'Dora the explorer'
 cartoon = 'Dora the explorer'
 
+boots = cartoon[1:4]
+# print(boots)
+
 
 # Using slicing please create a string that accesses 'explo' in 'Dora the explorer'
 
+journey = cartoon[9:14]
+# print(journey)
 
 # Using slicing please create a string that accesses 'albo' in 'Rocky Balboa'
 boxer = 'Rocky Balboa'
 
-# Let's step through this string 2 characters at a time
+creed = boxer[7:11]
+# print(boxer[7:11])
+# print(creed)
+
+# Let's step through this string 2 characters at a time # skipping 2 spaces in this example
 superheroine = 'Wonder Woman'
+# print(superheroine[2:len(superheroine):2])
 
 # Lets step through this entire word and skip by 4
 word = 'Supercalifragilisticexpialidocious'
-
+print(word[0:len(word):4])
 
 '''Slicing in reverse '''
 
