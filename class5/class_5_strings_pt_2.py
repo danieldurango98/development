@@ -109,14 +109,14 @@ superheroine = 'Wonder Woman'
 
 # Lets step through this entire word and skip by 4
 word = 'Supercalifragilisticexpialidocious'
-print(word[0:len(word):4])
+# print(word[0:len(word):4])
 
 '''Slicing in reverse '''
 
-animal = 'daycare' # Excludes the start character
-# print(animal[::-1]) # Full daycare in reverse
-# print(animal[5:0:-1]) # aycar
-# print(animal[6:0:-1]) # eracya
+random_word = 'daycare' # Excludes the start character
+# print(random_word[::-1]) # Full daycare in reverse
+# print(random_word[5:0:-1]) # aycar
+# print(random_word[6:0:-1]) # eracya
 
 
 '''
@@ -128,6 +128,26 @@ python
 hon
 
 '''
+# Create variable
+
+language = 'python'
+
+# Create a variable to get half of the length of the word
+
+half = int(len(language) / 2)
+# print(type(half))
+
+# Create final bracket notation
+
+result = language[half:len(language)]
+# print(result)
+
+
+language = 'python'
+# print(language[3:6])
+
+snake = language[3:6]
+# print(snake)
 
 
 '''
@@ -145,8 +165,12 @@ Test your code on a few inputs to make sure it works!
 '''
 
 # Get input 
+email = input("Hello, please enter your email address: ")
+print(email)
 
 # Clean input
+email = email.strip()
+print(email)
 
 # Test 1: It has a "." at the third-to-last index
 
