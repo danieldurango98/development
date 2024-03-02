@@ -165,19 +165,28 @@ Test your code on a few inputs to make sure it works!
 '''
 
 # Get input 
-email = input("Hello, please enter your email address: ")
+# email = input("Hello, please enter your email address: ")
 # print(email)
 
 # Clean input
-email = email.strip()
+# email = email.strip()
 # print(email)
 
 # Test 1: It has a "." at the third-to-last index
-email = 'jrjuste@gmail.com'
+email = 'danielgmail.com'
 test_1 = (email[-4] == '.')
-print('Test 1: Does the email have a "." at the third-to-last index?',test_1)
 
-# Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier
+# print('Test 1: Does the email have a "." at the third-to-last index?',test_1)
+
+# Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier, email cannot be @.com
+
+random_word = 'daycare' # Excludes the start character
+# print(random_word[::-1]) # Full daycare in reverse
+# print(random_word[5:0:-1]) # aycar
+# print(random_word[6:0:-1]) # eracya
+
+test_2 = ('@' in email[-6::-1])
+print(test_2)
 
 # Test 3: There is at least one character before the "@" symbol
 

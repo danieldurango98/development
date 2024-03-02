@@ -37,9 +37,9 @@ str2 = 'HELLO'.lower()
 # print(id(str2))
 
 ''' in - Returns True if a string appears inside another string (as a substring), and False otherwise.'''
-# test_character = 'b'
-# test_string = 'bananas'
-# print(test_character in test_string) #?
+test_character = 'b'
+test_string = 'bananas'
+print(test_character in test_string) #?
 
 ''' create a quick test to see if the sub string 'spreh' can be found in the string 'Incomprehensibilities' '''
 test_chars = 'spreh'
