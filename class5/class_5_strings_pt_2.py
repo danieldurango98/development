@@ -165,35 +165,43 @@ Test your code on a few inputs to make sure it works!
 '''
 
 # Get input 
-# email = input("Hello, please enter your email address: ")
+email = input("Hello, please enter your email address: ")
 # print(email)
 
 # Clean input
-# email = email.strip()
+email = email.strip()
 # print(email)
 
 # Test 1: It has a "." at the third-to-last index
-email = 'danielgmail.com'
+email = 'daniel@gmail.com'
 test_1 = (email[-4] == '.')
 
 # print('Test 1: Does the email have a "." at the third-to-last index?',test_1)
 
 # Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier, email cannot be @.com
-
-random_word = 'daycare' # Excludes the start character
-# print(random_word[::-1]) # Full daycare in reverse
-# print(random_word[5:0:-1]) # aycar
-# print(random_word[6:0:-1]) # eracya
-
 test_2 = ('@' in email[-6::-1])
-print(test_2)
+# print('Test 2: It has exactly one "@" symbol, at the fifth-to-last index or earlier, email cannot be @.com',test_2)
 
 # Test 3: There is at least one character before the "@" symbol
+character_before = email.find('@')
+test_3 = (character_before > 0)
+# print('There is at least one character before the "@" symbol',test_3)
+
+# my_email_index = email.index('d')
+# my_email_find = email.find('a')
+# print(my_email_index)
+# print(my_email_find)
 
 # Test 4: It doesn’t have any spaces (doesn’t contain " ")
+test_4 = email
+res = False
+if (email.find(" ")!=-1):
+    res = True
+# print(test_4)
 
 #Final Test with and Keyword
-
+# final_test = test_1 and test_2 and test_3 and test_4
+# print(final_test)
 
 # End Parameter
 # print('Hello', end=' ')
