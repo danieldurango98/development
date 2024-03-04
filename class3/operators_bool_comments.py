@@ -217,8 +217,8 @@ An inline comment is a comment on the same line as a statement. Inline comments 
 
 
 # not
-# x = 5
-# y = 7
+x = 5
+y = 7
 
 # Is x less than y? <
 # print(x < y)
