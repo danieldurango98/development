@@ -27,11 +27,11 @@ Example:
 User input: 7
 This is odd
 '''
-user_input = int(input('Please enter your number'))
+# user_input = int(input('Please enter your number'))
 
-if user_input % 2 != 0:
-    print ('This is odd')
-    
+# if user_input % 2 != 0:
+#     print ('This is odd')
+
 # We can use modulus to figure out odd or even
 # val = 7
 # result = val % 2
@@ -52,6 +52,45 @@ C - Between 70 and 79
 D - Between 65 and 69
 F - Anything under 65
 '''
+# Get grade from user
+# score = int(input('Please enter your grade: ' ))
+
+# Creat our conditional
+# Option 1
+# if score >= 90 and score <= 100:
+#     print('Grade A')
+# elif score >= 80 and score < 90:
+#     print('Grade B')
+# elif score >= 70 and score < 80:
+#     print('Grade C')
+# elif score >= 65 and score < 69:
+#     print('Grade D')
+# else:
+#     print('Grade F')
+
+# Option 2
+# if 90 <= score <= 100:
+#     print('Grade A')
+# elif 80 <= score < 90:
+#     print('Grade B')
+# elif 70 <= score < 80:
+#     print('Grade C')
+# elif 65 <= score < 69:
+#     print('Grade D')
+# else:
+#     print('Grade F')
+
+# Option 3
+# if score >= 90:
+#     print('Grade A')
+# elif score >= 80:
+#     print('Grade B')
+# elif score >= 70:
+#     print('Grade C')
+# elif score >= 65:
+#     print('Grade D')
+# else:
+#     print('Grade F')
 
 
 
