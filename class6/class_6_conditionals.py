@@ -13,8 +13,8 @@ y = 15
 x = 20
 y = 20
 
-if x > y:
-    print(x)
+# if x > y:
+#     print(x)
 
 
 
@@ -95,7 +95,6 @@ F - Anything under 65
 
 
 
-
 '''
 Exercise
 Add to your previous code so it prints “This is odd” if the user enters an odd number, and “This is even” if the user enters an even number.
@@ -112,9 +111,21 @@ This is even
 
 ''' Exercise solution with an elif and else'''
 
+# user_input = int(input('Please enter your number '))
+
+# With an elif
+# if user_input % 2 != 0:
+#     print ('This is odd')
+# elif user_input % 2 == 0:
+#     print('This is even')
 
 
 
+# # With an else statement
+# if user_input % 2 != 0:
+#     print ('This is odd')
+# else:
+#     print('This is even')
 
 
 '''
@@ -138,8 +149,20 @@ Unknown
 ''' Exercise solution(s)'''
 
 
+# Check if it is a decimal
+
+# user_input = input('Please enter your number: ')
 
 
+# try:
+#     user_input = int(input('Please enter your number: '))
+# except:
+#     print('Unknown')
+# else:
+#     if user_input % 2 != 0:
+#         print('This is odd')
+#     else:
+#         print('This is even')
 
 
 
@@ -152,15 +175,24 @@ Write some code that takes in a string from the user and prints whether the stri
 Examples:
 User input: 7
 This is a number
+String method - isdigit
 
 User input: abcde
 This is a word
+String method - isalpha
 
 User input: 7!ab5
 This is something else
 
 '''
+user_input = input('Please enter your data: ')
 
+if user_input.isdigit():
+    print(f'{user_input} is a number')
+elif user_input.isalpha():
+    print(f'{user_input} is a word')
+else:
+    print(f'{user_input} is something else.')
 
 
 
