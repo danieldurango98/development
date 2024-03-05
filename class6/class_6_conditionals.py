@@ -185,14 +185,14 @@ User input: 7!ab5
 This is something else
 
 '''
-user_input = input('Please enter your data: ')
+# user_input = input('Please enter your data: ')
 
-if user_input.isdigit():
-    print(f'{user_input} is a number')
-elif user_input.isalpha():
-    print(f'{user_input} is a word')
-else:
-    print(f'{user_input} is something else.')
+# if user_input.isdigit():
+#     print(f'{user_input} is a number')
+# elif user_input.isalpha():
+#     print(f'{user_input} is a word')
+# else:
+#     print(f'{user_input} is something else.')
 
 
 
@@ -230,7 +230,7 @@ else:
 
 
 # nested conditionals
-num = 5
+# num = 5
 
 # if num % 2 == 1:
 #     if num < 10:
@@ -254,13 +254,19 @@ If they match, print “Login successful.” If they don't, print “Incorrect u
 
 
 
-# Prompt the user to enter their username and password using the input() function.
-
+# Prompt the user to enter their username and password using the input() function. use strip() as well 
+username = 'ddurango'
+password = 'cancode123'
 
 # Create two variables called username and password and set them to any valid string values.
 
+username = input('Hello, please enter your username: ')
+print(username)
 
-# Create your conditional
+password = input('Please enter your password: ')
+print(password)
+
+# Create your conditional, includes your conditional
 
 
 
