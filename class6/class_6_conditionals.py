@@ -255,21 +255,28 @@ If they match, print “Login successful.” If they don't, print “Incorrect u
 
 
 # Prompt the user to enter their username and password using the input() function. use strip() as well 
-username = 'ddurango'
-password = 'cancode123'
-
+username = input('Hello, please enter your username: ')
+# print(username)
+password = input('Please enter your password: ')
+# print(password)
 # Create two variables called username and password and set them to any valid string values.
 
-username = input('Hello, please enter your username: ')
-print(username)
+username = username.strip()
+password = password.strip()
 
-password = input('Please enter your password: ')
-print(password)
+username = 'durango'
+password = 'cancode123'
 
 # Create your conditional, includes your conditional
 
+if username == username:
+    print('Login successful')
+elif username != username:
+    print('Incorrect username or password')
 
-
-
+if password == password:
+    print('Login successful')
+elif password != password:
+    print('Incorrect username or password')
 
 
