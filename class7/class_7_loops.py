@@ -4,13 +4,30 @@
 
 ''' While my start value is less than my end value, we will increment by 1'''
 
+# end = int(input('Please enter your number: '))
+# start = 0
+
+# while start < end:
+#     print(start)
+#     start += 1
 
 
 ''' While my start value is less than my end value, we will decrement by one - You can stop the infinite loop by hitting ctrl + c'''
+# end = 20
+# start = 0
 
+# while start < end:
+#     print(start)
+#     start -= 1
 
 
 ''' Example Create a while loop that prints every integer from 1 to 10.'''
+# start = 1 # initialization
+# end = 11
+
+# while start < end: # condition
+#     print(start)
+#     start += 1
 
 
 
@@ -22,7 +39,14 @@ This allows you to take user input multiple times without writing multiple lines
 
 Lets look at code that will run infinitely until the user tells it to "stop"
 '''
+#initialize our string
+# userin = ''
 
+# while userin != 'stop':
+#     userin = input("Please enter a word, or 'stop' to end the loop: ")
+#     print(userin)
+
+# username, password, day_of_week, = '', '', '' # initialize (assign) muliple variables on one line
 
 '''
 Exercise
@@ -38,14 +62,21 @@ If they match, print “Login successful” and end the program.
 '''
 
 # Set sys id and pass
-
+sys_id = 'admin'
+sys_password = 'password'
 
 # Prompt User
-
+user_id = input('Please enter your username: ')
+user_password = input('Please enter your password: ')
 
 # Our initial check, while not equal we will enter loop
+while sys_id != user_id and sys_password != user_password:
+    # we have entered the loop, this means the username/password did not match
+    print('Incorrect username or password')
+    user_id = input('Please enter your username: ')
+    user_password = input('Please enter your password: ')
 
-
+print('Login Successful') # Outside of the while loop
 
 ''' For Loops '''
 
