@@ -62,36 +62,39 @@ If they match, print “Login successful” and end the program.
 '''
 
 # Set sys id and pass
-sys_id = 'admin'
-sys_password = 'password'
+# sys_id = 'admin'
+# sys_password = 'password'
 
-# Prompt User
-user_id = input('Please enter your username: ')
-user_password = input('Please enter your password: ')
+# # Prompt User
+# user_id = input('Please enter your username: ')
+# user_password = input('Please enter your password: ')
 
-# Our initial check, while not equal we will enter loop
-while sys_id != user_id and sys_password != user_password:
-    # we have entered the loop, this means the username/password did not match
-    print('Incorrect username or password')
-    user_id = input('Please enter your username: ')
-    user_password = input('Please enter your password: ')
+# # Our initial check, while not equal we will enter loop
+# while sys_id != user_id and sys_password != user_password:
+#     # we have entered the loop, this means the username/password did not match
+#     print('Incorrect username or password')
+#     user_id = input('Please enter your username: ')
+#     user_password = input('Please enter your password: ')
 
-print('Login Successful') # Outside of the while loop
+# print('Login Successful') # Outside of the while loop
 
 ''' For Loops '''
 
 # STRING
-my_string = 'Supercalifragilisticexpialidocious'
-
+# my_string = 'Supercalifragilisticexpialidocious'
+# for s in my_string:
+#     print(s)
 
 # LIST
-my_list = ['dog', 'cat', 'bird', 'giraffe', 'fox', 'elephant', 'mouse', 'zebra']
-
+# my_list = ['dog', 'cat', 'bird', 'giraffe', 'fox', 'elephant', 'mouse', 'zebra']
+# for animals in my_list:
+#     print(animals)
 
 # TUPLE
-my_tuple = ('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
+# my_tuple = ('january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december')
 
-
+# for months in my_tuple:
+#     print(months)
 
 # DICTIONARY
 my_dictionary = {"First name": "Jill",
@@ -99,22 +102,39 @@ my_dictionary = {"First name": "Jill",
                  "Age": 34,
                  "Address":"1515 Mockingbird Lane"}
 
+# for keys
+# for k in my_dictionary.keys():
+#     print(k)
 
+# for values
+# for v in my_dictionary.values():
+#     print(v)
 
+# for both (items)
+# for k, v in my_dictionary.items():
+#     print(k, v)
 
 # SET
 my_set = {"Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday", "Sunday"}
 
-
+# for days in my_set:
+#     print(days)
 
 # RANGE
-
+# for x in range(10, 25):
+#     print(x)
 
 
 '''
 Write a for loop that loops through a string, counts all the letters, and then print how long the string is.
 '''
+# my_string = 'Supercalifragilisticexpialidocious'
+# total = 0
 
+# for m in my_string:
+#     total += 1
+
+# print(f'There are {total} letters in your word {my_string}.')
 
 
 ''' Exercise
@@ -128,7 +148,14 @@ Example:
 
 Hint: remember to cast to int() for each digit in the loop
 '''
+# sum = 0 # initialize our variable
+# user_input = input('Please enter your number: ')
 
+# for t in user_input:
+#     if user_input.isdecimal(): # once we confirm it is a number
+#         t = int(t) # this has to be cast to an integer to be added to sum
+#         sum += t # every time through, we will add that value to sum
+# print(f'Your total is {sum}')
 
 
 
@@ -146,7 +173,16 @@ o is a vowel
 
 '''
 
+# word = input('Please enter your word: ')
+# vowels = ['a', 'e', 'i', 'o', 'u']
 
+# for w in word:
+
+#     if w in vowels:
+#         print(f'{w} is a vowel')
+#     else:
+#         print(f'{w} is a consonant')
+    
 
 
 ''' Exercise 
@@ -154,10 +190,15 @@ You're working on a data analysis project for a company that looks at written te
 Write a Python program that takes a string as input from the user, removes anything from the string that isn't a letter, and prints the new string.
 You can loop through the string in a for loop, use the .isalpha() string method, and remember that strings are immutable, so you will have to build a new string from scratch using string concatenation.
 '''
+result = '' # this will capture our alphabet
+user_input = input('Please enter your data: ')
 
-
-
-
+for u in user_input:
+    if u.isalpha(): # if the letter in the string is in the alphabet
+        result += u # this will append that character to our new string
+    # else:
+    #     print(f'Sorry {u} is not a letter')
+print(result)
 
 
 
