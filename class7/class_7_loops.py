@@ -190,15 +190,15 @@ You're working on a data analysis project for a company that looks at written te
 Write a Python program that takes a string as input from the user, removes anything from the string that isn't a letter, and prints the new string.
 You can loop through the string in a for loop, use the .isalpha() string method, and remember that strings are immutable, so you will have to build a new string from scratch using string concatenation.
 '''
-result = '' # this will capture our alphabet
-user_input = input('Please enter your data: ')
+# result = '' # this will capture our alphabet
+# user_input = input('Please enter your data: ')
 
-for u in user_input:
-    if u.isalpha(): # if the letter in the string is in the alphabet
-        result += u # this will append that character to our new string
-    # else:
-    #     print(f'Sorry {u} is not a letter')
-print(result)
+# for u in user_input:
+#     if u.isalpha(): # if the letter in the string is in the alphabet
+#         result += u # this will append that character to our new string
+#     # else:
+#     #     print(f'Sorry {u} is not a letter')
+# print(result)
 
 
 
