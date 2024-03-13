@@ -231,27 +231,27 @@ REQUIREMENTS
 
 '''These variables will be placeholders for the total and new string we will be creating'''
 
-new_total = 0
-new_string = ''
+# new_total = 0
+# new_string = ''
 
-while True:
-    user_input = input("Please enter your data: ")
+# while True:
+#     user_input = input("Please enter your data: ")
 
-    # if empty stop the loop
-    if len(user_input) == 0:
-        print('String is empty, stopping the loop')
-        break
-    # if number convert to float 
-    elif user_input.isnumeric():
-        user_input = float(user_input) #casting to a float
-        new_total += user_input
-        print(f'Updated total to {new_total}')
-        continue
-    # If letter concatenate to new string
-    elif user_input.isalpha():
-        new_string += user_input
-        print(f'Your updated string is {new_string}')
-    # Check for special characters
-    elif not user_input.isalnum():
-        print(f'{user_input} is a special character, no action and lets continue')
-        continue
+#     # if empty stop the loop
+#     if len(user_input) == 0:
+#         print('String is empty, stopping the loop')
+#         break
+#     # if number convert to float 
+#     elif user_input.isnumeric():
+#         user_input = float(user_input) #casting to a float
+#         new_total += user_input
+#         print(f'Updated total to {new_total}')
+#         continue
+#     # If letter concatenate to new string
+#     elif user_input.isalpha():
+#         new_string += user_input
+#         print(f'Your updated string is {new_string}')
+#     # Check for special characters
+#     elif not user_input.isalnum():
+#         print(f'{user_input} is a special character, no action and lets continue')
+#         continue
