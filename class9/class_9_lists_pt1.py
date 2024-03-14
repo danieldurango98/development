@@ -178,17 +178,34 @@ You want to make a list containing the types of pets that the user has. Keep pro
 
 '''
 
+# user_input = '' # initialization
+# pet_name = [] # this will capture animal names
 
+# while user_input != 'stop':
+#     user_input = input('Please enter your pets name: ')
+#     if user_input == 'stop': # this is to not add stop to the list
+#         break
+#     elif user_input not in pet_name:
+#         pet_name.append(user_input)
+#     else:
+#         print(f'{user_input} is already in the list')
+
+# print(pet_name)
 
 ''' Removing duplicates from a list, but leaving 1'''
 
 colors = ['blue', 'blue', 'blue', 'green', 'red', 'blue', 'blue']
 
 # Option 1 
-
+# new_colors = [] # this will capture unique colors
+# for c in colors: # this is looping through original list
+#     if c not in new_colors:
+#         new_colors.append(c)
+# print(new_colors)
 
 # Option 2 - Using Sets
-
+# colors = list(set(colors))
+# print(colors)
 
 
 
