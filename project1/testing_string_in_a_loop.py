@@ -29,13 +29,24 @@ while True:
         continue
 
     # Contain at least 1 number
-
-    print('Lets test for contains 1 number')
-    break
-    # Contains at least 1 capital letter
-
-    # Contains '@' symbol
+    contains_num = re.search(r'/d', user_input) # will look for a digit in the string
+    if contains_num:
+        print(f'Test Passed: {user_input} contains a number')
+    else:
+        print(f'Test Failed: {user_input} does not contain a number')
+        continue
     
+    # Contains at least 1 capital letter
+    any_uppercase = any(u.isupper() for u in user_input) 
+    if any_uppercase:
+        print(f'Test Passed: {user_input} contains a capital letter')
+    else:
+        print(f'Test Failed: {user_input} has no caps')
+        continue
+   
+    # Contains '@' symbol
+    print('Woo hoo! We made it to @ symbol testing')
+    break
     # Contains no spaces
     
         
