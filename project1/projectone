@@ -1,0 +1,11 @@
+import re
+
+sys_username = 'durango1'
+sys_password = 'pythoncode1$'
+
+
+first_input, second_input = '', ''
+
+while True:
+    sys_username = input("Please enter your username ")
+    sys_password = input("Please enter your password ")
