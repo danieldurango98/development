@@ -1,11 +1,58 @@
 import re
 
-sys_username = 'durango1'
-sys_password = 'pythoncode1$'
 
+intro = print('Hi, here are some requirements you must abide by. The username must start with a lowercase letter and only contain letters, numbers, and underscores. The password must be at least 8 characters long, contain at least one uppercase letter, contain at least one lowercase letter, contain at least one digit, contain at least one special character, and not have any spaces.')
 
-first_input, second_input = '', ''
+taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
+
+error_messages = ['Invalid Username', 'Username Taken', 'Invalid Password']
 
 while True:
-    sys_username = input("Please enter your username ")
-    sys_password = input("Please enter your password ")
+    username = input('Please enter your username ')
+    # password = input('Please enter your password ')
+
+    # Does not contain taken usernames
+    if username in taken_usernames:
+        print(error_messages[1])
+        continue
+    
+    # lowercase test
+    if not username[0].islower():
+        print(error_messages[0])
+        continue   
+
+    print('I am here')
+
+    # # Use the .isidentifier() method on the following username variables letters, numbers and underscores
+    #     if username.isidentifier():
+    #         print("Username successful")
+    #     else:
+#         print("Invalid username")
+#         continue
+#     break
+# # Password Requirements
+while True:
+    password = input('Please enter your password ')
+
+# Must be 8 characters long
+#     if len(password) >= 8:
+#         print(f'Test Passed: {password} is greater than 8 characters')
+#     else:
+#         print(f'Test Failed: {password} is less than 8 characters')
+#         continue
+    
+# # Contains one uppercase and one lowercase
+#     any_uppercase = any(u.isupper() for u in password) 
+#     if any_uppercase:
+#         print(f'Test Passed: {password} contains a capital letter')
+#     else:
+#         print(f'Test Failed: {password} has no caps')
+#         continue
+
+# Contains at least one digit
+
+    
+
+# Contains at least one of these !, ?, @, #, $, ^, &, *, _, -
+
+# Doesn't contain any spaces

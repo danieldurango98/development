@@ -216,27 +216,37 @@ end = 50
     
 num_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 
-for n in num_list:
-    if n % 2 == 0:
-        print(f'{n} is even')
-    else:
-        print(f'{n} is odd')
+# for n in num_list:
+#     if n % 2 == 0:
+#         print(f'{n} is even')
+#     else:
+#         print(f'{n} is odd')
 
 
 # write a for loop to loop through this string and tell the user if the number is vowel or a consonant
 
-vowels = 'aeiou'
-my_string = 'abracadabra'
+# vowels = 'aeiou'
+# my_string = 'abracadabra'
 
-for m in my_string:
-    if m in vowels:
-        print(f'{m} is a vowel')
-    else:
-        print(f'{m} is a consonant')
+# for m in my_string:
+#     if m in vowels:
+#         print(f'{m} is a vowel')
+#     else:
+#         print(f'{m} is a consonant')
 
 
 # In a while loop, ask the user for their favorite animal. If the word is equal to giraffe, we will tell the user congratulations and end the loop. Otherwise we will keep prompting the user.
 
+# while True:
+#     fav_animal = input('What is your favorite animal? ')
+#     fav_animal = fav_animal.strip() # removes spaces
+#     fav_animal = fav_animal.casefold()
+#     if fav_animal == 'giraffe':
+#         print('Congratulations')
+#         break
+#     else:
+#         continue
+    
 
 
 
@@ -250,29 +260,58 @@ for m in my_string:
         
 # Create a while loop, We will ask the user for a string, the first character of the string must be a number, the last character must be a capital letter to pass testing. Otherwise the user must keep trying.
 
-# test_word = '1helloH'
+test_word = '1helloH'
+
+# while True:
+#     user_input = input('Enter a string ')
+#     user_input = user_input.strip()
+#     if user_input[0].isnumeric() and user_input[-1]. isupper():
+#         print('Congratulations')
+#         break
+#     else:
+#         continue
 
 
+
+# first_char = test_word[0]
+# print(first_char)
+
+# last_char = test_word[len(test_word) - 1]
+# print(last_char)
+
+# While Loop
+# Conditional
+# Booleans
+# Break and Continue Keyword
+# String methods
 
 ''' Lists '''
 
 # Loop through the full list, and copy all the items in that list into the empty list
-full_list = ['Move', 'me', 'to', 'an', 'empty', 'list', 'with', 'append']
-empty_list = []
+# full_list = ['Move', 'me', 'to', 'an', 'empty', 'list', 'with', 'append']
+# empty_list = []
+
+# for f in full_list: # looping through
+#     if f not in empty_list: # if the item doesn't exist in empty lisr
+#         empty_list.append(f) # we will add it
+# print(empty_list)
 
 
 # Lets practice some more indexing
 
 my_super_list = [['superman', 'wonderwoman','batman'],['spiderman','captain america','ironman'],['aquaman']]
 
-# Create a variable and assign it to wonderwoman via indexing
+# # Create a variable and assign it to wonderwoman via indexing
+# wonderwoman = my_super_list[0][1]
+# print(wonderwoman)
 
+# # Create a variable and assign it to spiderman via indexing
+# spiderman = my_super_list[1][0]
+# print(spiderman)
 
-# Create a variable and assign it to spiderman via indexing
-
-
-# Create a variable and assign it to aquaman via indexing
-
+# # Create a variable and assign it to aquaman via indexing
+# aquaman = my_super_list[2][0]
+# print(aquaman)
 
 # Using a for loop, create a new list that contains any students without the letter a
 

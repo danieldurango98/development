@@ -63,16 +63,6 @@ while True:
         print(f'Test Failed: {user_input} contains a space')
         continue
     
-
-    re_prompt_user = input('Congrats on signing up, please login')
-
-    if user_input == re_prompt_user:
-    print('Congrats on logging in')
-    break
-    else:
-    print('No dice! Please start over')
-    continue
-    
     
        
   
