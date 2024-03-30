@@ -16,7 +16,7 @@ while True:
         print(error_messages[1])
         continue
     
-    # lowercase test
+    # Lowercase Test
     if not username[0].islower():
         print(error_messages[0])
         continue   
@@ -28,14 +28,14 @@ while True:
 
     # Password Requirements
 
-# Must be 8 characters long
+    # Must be 8 characters long
     if len(password) >= 8:
         print(f'Test Passed: {password} is greater than 8 characters')
     else:
         print(error_messages[2])
         continue
     
-# # Contains one uppercase and one lowercase
+    # Contains one uppercase and one lowercase
     any_uppercase = any(u.isupper() for u in password) 
     if any_uppercase:
         print(f'Test Passed: {password} contains a capital letter')
@@ -43,7 +43,7 @@ while True:
         print(error_messages[2])
         continue
 
-# Contains at least one digit
+    # Contains at least one digit
     contains_num = re.search(r'\d', password) # will look for a digit in the string
     if contains_num:
         print(f'Test Passed: {password} contains a number')
@@ -51,7 +51,7 @@ while True:
         print(error_messages[2])
         continue
     
-# Contains at least one of these !, ?, @, #, $, ^, &, *, _, -  # regular expression completed (match)
+    # Contains at least one of these !, ?, @, #, $, ^, &, *, _, -  # regular expression completed (match)
     special_characters = ['!, ?, @, #, $, ^, &, *, _, -']
 
     special_characters = re.findall("[!, ?, @, #, $, ^, &, *, _, -]", password)
@@ -61,8 +61,7 @@ while True:
         print(error_messages[2])
         continue
 
-# Doesn't contain any spaces
-    
+    # Doesn't contain any spaces
     space = ' '
 
     if not space in password:
@@ -71,13 +70,15 @@ while True:
         print(error_messages[2])
         continue
 
-# Check if username and password match
+    print('Sign up successful')
+
+    # Check if username and password match
     username_again = input('Please enter your username again: ')
     password_again = input('Please enter your password again: ')
 
-# Check if entered username and password match from initial input
+    # Check if entered username and password match from initial input
     if username == username_again and password == password_again:
-        print("Registration Successful!")
+        print("Login successful!")
         break
     else:
         print(error_messages[3])  # Username and password do not match, restart loop
