@@ -5,11 +5,11 @@ intro = print('Hi, here are some requirements you must abide by. The username mu
 
 taken_usernames = ['admin', 'admin123', 'superuser', 'superuser123']
 
-error_messages = ['Invalid Username', 'Username Taken', 'Invalid Password']
+error_messages = ['Invalid Username', 'Username Taken', 'Invalid Password', 'Username and Password do not match']
 
 while True:
     username = input('Please enter your username ')
-    # password = input('Please enter your password ')
+    password = input('Please enter your password ')
 
     # Does not contain taken usernames
     if username in taken_usernames:
@@ -21,38 +21,64 @@ while True:
         print(error_messages[0])
         continue   
 
-    print('I am here')
+    # Use the .isidentifier() method on the following username variables letters, numbers and underscores
+    if not username.isidentifier():
+        print(error_messages[0])
+        continue
 
-    # # Use the .isidentifier() method on the following username variables letters, numbers and underscores
-    #     if username.isidentifier():
-    #         print("Username successful")
-    #     else:
-#         print("Invalid username")
-#         continue
-#     break
-# # Password Requirements
-while True:
-    password = input('Please enter your password ')
+    # Password Requirements
 
 # Must be 8 characters long
-#     if len(password) >= 8:
-#         print(f'Test Passed: {password} is greater than 8 characters')
-#     else:
-#         print(f'Test Failed: {password} is less than 8 characters')
-#         continue
+    if len(password) >= 8:
+        print(f'Test Passed: {password} is greater than 8 characters')
+    else:
+        print(error_messages[2])
+        continue
     
 # # Contains one uppercase and one lowercase
-#     any_uppercase = any(u.isupper() for u in password) 
-#     if any_uppercase:
-#         print(f'Test Passed: {password} contains a capital letter')
-#     else:
-#         print(f'Test Failed: {password} has no caps')
-#         continue
+    any_uppercase = any(u.isupper() for u in password) 
+    if any_uppercase:
+        print(f'Test Passed: {password} contains a capital letter')
+    else:
+        print(error_messages[2])
+        continue
 
 # Contains at least one digit
-
+    contains_num = re.search(r'\d', password) # will look for a digit in the string
+    if contains_num:
+        print(f'Test Passed: {password} contains a number')
+    else:
+        print(error_messages[2])
+        continue
     
+# Contains at least one of these !, ?, @, #, $, ^, &, *, _, -  # regular expression completed (match)
+    special_characters = ['!, ?, @, #, $, ^, &, *, _, -']
 
-# Contains at least one of these !, ?, @, #, $, ^, &, *, _, -
+    special_characters = re.findall("[!, ?, @, #, $, ^, &, *, _, -]", password)
+    if special_characters:
+        print(f'Test Passed: {password} contains a special character')
+    else:
+        print(error_messages[2])
+        continue
 
 # Doesn't contain any spaces
+    
+    space = ' '
+
+    if not space in password:
+        print(f'Test Passed: {password} has no space')
+    else:
+        print(error_messages[2])
+        continue
+
+# Check if username and password match
+    username_again = input('Please enter your username again: ')
+    password_again = input('Please enter your password again: ')
+
+# Check if entered username and password match from initial input
+    if username == username_again and password == password_again:
+        print("Registration Successful!")
+        break
+    else:
+        print(error_messages[3])  # Username and password do not match, restart loop
+        continue
