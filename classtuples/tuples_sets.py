@@ -268,7 +268,15 @@ The set of employees that know both Python and JavaScript
 The set of employees that know JavaScript, but not Python
 The set of employees that know Python or JavaScript, but not both
 '''
-# instructions
+
+# User instructions
+print('''
+Python and JS Developer Tracker
+Instructions
+Input 's' or 'stop' at anytime to exit program
+To add a Python developer type 'p' when prompted
+To add a Javascipt developer type 'js' when prompted.
+''')
 
 # initialize our variables
  
