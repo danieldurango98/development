@@ -270,19 +270,36 @@ The set of employees that know Python or JavaScript, but not both
 '''
 
 # User instructions
-print('''
-Python and JS Developer Tracker
-Instructions
-Input 's' or 'stop' at anytime to exit program
-To add a Python developer type 'p' when prompted
-To add a Javascipt developer type 'js' when prompted.
-''')
+# print('''
+# Python and JS Developer Tracker
+# Instructions
+# Input 's' or 'stop' at anytime to exit program
+# To add a Python developer type 'p' when prompted
+# To add a Javascipt developer type 'js' when prompted.
+# ''')
 
-# initialize our variables
+# Initialize our variables
+
+# Data Collection Sets
+python_devs, js_devs = set(), set()
+
+# User Input
+dev_type_input, dev_name_input = '', ''
+
+# Error messages
+error_msgs = ('Invalid Input, please try again.', 'Thank you, have a nice day')
  
-# put our error messages in a tuple
 
 # while loop
+while True:
+    dev_type_input = input("Type 'P' for PYTHON Developer, 'JS' for JavaScript Developer, or 'STOP' to exit program: ").lower()
+
+    # This gives the user an exit
+    if dev_type_input == 'stop':
+        print(error_msgs[1])
+        break
+
+
 
 # inputs
 
