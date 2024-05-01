@@ -270,13 +270,13 @@ The set of employees that know Python or JavaScript, but not both
 '''
 
 # User instructions
-# print('''
-# Python and JS Developer Tracker
-# Instructions
-# Input 's' or 'stop' at anytime to exit program
-# To add a Python developer type 'p' when prompted
-# To add a Javascipt developer type 'js' when prompted.
-# ''')
+print('''
+Python and JS Developer Tracker
+Instructions
+Input 's' or 'stop' at anytime to exit program
+To add a Python developer type 'p' when prompted
+To add a Javascipt developer type 'js' when prompted.
+''')
 
 # Initialize our variables
 
@@ -291,17 +291,57 @@ error_msgs = ('Invalid Input, please try again.', 'Thank you, have a nice day')
  
 
 # while loop
+
+# input
 while True:
     dev_type_input = input("Type 'P' for PYTHON Developer, 'JS' for JavaScript Developer, or 'STOP' to exit program: ").lower()
-
+    # if statements, break keyword, continue
     # This gives the user an exit
     if dev_type_input == 'stop':
         print(error_msgs[1])
         break
 
+    # Get a dev type, add to our sets, and offer an exit
+    if dev_type_input == 'p' or dev_type_input == 'js':
+        dev_name_input = input("Enter developer name: ").lower()
+
+        if dev_name_input == 'stop':
+            print(error_msgs[1])
+            break
+        elif dev_type_input == 'p':
+            python_devs.add(dev_name_input.title())
+        else:
+            js_devs.add(dev_name_input.title())
+    else:
+        print(error_msgs[0])
+        continue
+    
+    # set operations
+    both_languages = python_devs.intersection(js_devs) # Everybody who knows both
+
+    know_js_not_python = js_devs.difference(python_devs) # Know js not python = difference
+
+    know_python_or_js_but_not_both = js_devs.symmetric_difference(python_devs) # who knows python or js but not both
+
+    # If sets are empty, display no data for user
+    if both_languages == set():
+        both_languages = 'No Data'
+
+    if know_js_not_python == set():
+        know_js_not_python = 'No Data'
+
+    if know_python_or_js_but_not_both == set():
+        know_python_or_js_but_not_both = 'No Data'
+
+    print('Results')
+    print('-----------------------------------------------------------')
+    print(f'The following developers know both languages: {both_languages}')
+    print(f'The following developers know Javascript but not Python: {know_js_not_python}')
+    print(f'The following developers know Python or Javascript but not both: {know_python_or_js_but_not_both}')
+    print('-----------------------------------------------------------')
 
 
-# inputs
+# Inputs
 
 # string methods for cleanup if needed .strip() .title()
 
@@ -312,8 +352,35 @@ while True:
 # print statements, formatted strings
  
  
+'''
+Self-assessment
+1. Print Hello World
+2. Assign my first name to a variable and print
+3. Write a for loop to loop through
+my_list = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+4. Write a while loop to count from 1 to 75
+5. Use a While true loop that prompts you for 2 numbers, it will add the 2 numbers and print the result than stop
+6. Using range function, count from 5 to 50
+7. Use a string method to change WEDNESDAY to wednesday
+8. Take input from the user and using an if statement, let the user know if the value they entered is a letter or a number
+9. Take a word from the user and let them know how many vowels are in the word
+10. Remove the duplicates from a list with values [4, 4, 4, 3, 2, 1, 4, 9]
+'''
+
+# 9. Take a word from the user and let them know how many vowels are in the word
+
+is_a_vowel = input("Please input your word: ")
 
 
 
 
 
+# word = input('Please enter your word: ')
+# vowels = ['a', 'e', 'i', 'o', 'u']
+
+# for w in word:
+
+#     if w in vowels:
+#         print(f'{w} is a vowel')
+#     else:
+#         print(f'{w} is a consonant')
